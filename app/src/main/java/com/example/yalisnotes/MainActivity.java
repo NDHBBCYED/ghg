@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity
         setOnClickListener();
     }
 
-
     private void initWidgets()
     {
         noteListView = findViewById(R.id.noteListView);
@@ -39,7 +38,6 @@ public class MainActivity extends AppCompatActivity
         NoteAdapter noteAdapter = new NoteAdapter(getApplicationContext(), Note.nonDeletedNotes());
         noteListView.setAdapter(noteAdapter);
     }
-
 
     private void setOnClickListener()
     {
